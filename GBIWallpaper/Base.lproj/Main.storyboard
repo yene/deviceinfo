@@ -16,17 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Xj-MC3">
-                                <rect key="frame" x="186" y="378" width="229" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zK-cG-xeL">
+                                <rect key="frame" x="112" y="124" width="377" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="377" id="GmA-SA-mYG"/>
+                                    <constraint firstAttribute="height" constant="153" id="kE8-FP-rGf"/>
+                                    <constraint firstAttribute="height" constant="153" id="w5R-do-a1J"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="w5R-do-a1J"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS 8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Xj-MC3">
+                                <rect key="frame" x="186" y="296" width="229" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2014-09-24 at 14.12.09.png" translatesAutoresizingMaskIntoConstraints="NO" id="5zK-cG-xeL">
-                                <rect key="frame" x="156" y="81" width="334" height="201"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5zK-cG-xeL" secondAttribute="centerX" id="3KA-uq-tLS"/>
+                            <constraint firstAttribute="centerY" secondItem="5zK-cG-xeL" secondAttribute="centerY" constant="100" id="8t2-pM-RSr"/>
+                            <constraint firstItem="4LP-Xj-MC3" firstAttribute="top" secondItem="5zK-cG-xeL" secondAttribute="bottom" constant="19" id="pe2-TD-Kf3"/>
+                            <constraint firstAttribute="centerX" secondItem="4LP-Xj-MC3" secondAttribute="centerX" id="uan-hd-qfG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -34,6 +50,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2014-09-24 at 14.12.09.png" width="1628" height="643"/>
+        <image name="logo.png" width="1628" height="643"/>
     </resources>
 </document>

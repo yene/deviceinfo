@@ -14,7 +14,7 @@
 		AC941C4019FF842800DC38EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC941C3F19FF842800DC38EE /* Images.xcassets */; };
 		AC941C4319FF842800DC38EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC941C4119FF842800DC38EE /* LaunchScreen.xib */; };
 		AC941C4F19FF842800DC38EE /* GBIWallpaperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC941C4E19FF842800DC38EE /* GBIWallpaperTests.m */; };
-		AC941C5B19FF84FD00DC38EE /* Screen Shot 2014-09-24 at 14.12.09.png in Resources */ = {isa = PBXBuildFile; fileRef = AC941C5A19FF84FD00DC38EE /* Screen Shot 2014-09-24 at 14.12.09.png */; };
+		AC941C5B19FF84FD00DC38EE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AC941C5A19FF84FD00DC38EE /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		AC941C4819FF842800DC38EE /* GBIWallpaperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBIWallpaperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC941C4D19FF842800DC38EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC941C4E19FF842800DC38EE /* GBIWallpaperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBIWallpaperTests.m; sourceTree = "<group>"; };
-		AC941C5A19FF84FD00DC38EE /* Screen Shot 2014-09-24 at 14.12.09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2014-09-24 at 14.12.09.png"; sourceTree = "<group>"; };
+		AC941C5A19FF84FD00DC38EE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,7 @@
 		AC941C3119FF842800DC38EE /* GBIWallpaper */ = {
 			isa = PBXGroup;
 			children = (
-				AC941C5A19FF84FD00DC38EE /* Screen Shot 2014-09-24 at 14.12.09.png */,
+				AC941C5A19FF84FD00DC38EE /* logo.png */,
 				AC941C3619FF842800DC38EE /* AppDelegate.h */,
 				AC941C3719FF842800DC38EE /* AppDelegate.m */,
 				AC941C3919FF842800DC38EE /* ViewController.h */,
@@ -171,6 +171,7 @@
 				TargetAttributes = {
 					AC941C2E19FF842800DC38EE = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = NDJHDNKXD6;
 					};
 					AC941C4719FF842800DC38EE = {
 						CreatedOnToolsVersion = 6.1;
@@ -203,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC941C3E19FF842800DC38EE /* Main.storyboard in Resources */,
-				AC941C5B19FF84FD00DC38EE /* Screen Shot 2014-09-24 at 14.12.09.png in Resources */,
+				AC941C5B19FF84FD00DC38EE /* logo.png in Resources */,
 				AC941C4319FF842800DC38EE /* LaunchScreen.xib in Resources */,
 				AC941C4019FF842800DC38EE /* Images.xcassets in Resources */,
 			);
@@ -349,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yannick Weiss (3SL68TTSPK)";
 				INFOPLIST_FILE = GBIWallpaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Yannick Weiss (3SL68TTSPK)";
 				INFOPLIST_FILE = GBIWallpaper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +421,7 @@
 				AC941C5419FF842800DC38EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC941C5519FF842800DC38EE /* Build configuration list for PBXNativeTarget "GBIWallpaperTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +430,7 @@
 				AC941C5719FF842800DC38EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
