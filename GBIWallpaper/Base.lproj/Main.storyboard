@@ -29,13 +29,27 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Xj-MC3">
-                                <rect key="frame" x="183" y="296" width="235" height="125"/>
-                                <string key="text">GBM iPad 401
-iOS 8
-iPad 4
-Retina (2048 × 1536)</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qv-km-V2d">
+                                <rect key="frame" x="197" y="295" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guf-z2-4hB">
+                                <rect key="frame" x="197" y="324" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsR-qY-cG2">
+                                <rect key="frame" x="197" y="359" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="resolution" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugr-r6-UI7">
+                                <rect key="frame" x="197" y="388" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,12 +58,16 @@ Retina (2048 × 1536)</string>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="5zK-cG-xeL" secondAttribute="centerX" id="3KA-uq-tLS"/>
                             <constraint firstAttribute="centerY" secondItem="5zK-cG-xeL" secondAttribute="centerY" constant="100" id="8t2-pM-RSr"/>
-                            <constraint firstItem="4LP-Xj-MC3" firstAttribute="top" secondItem="5zK-cG-xeL" secondAttribute="bottom" constant="19" id="pe2-TD-Kf3"/>
-                            <constraint firstAttribute="centerX" secondItem="4LP-Xj-MC3" secondAttribute="centerX" id="uan-hd-qfG"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="devicemodel" destination="guf-z2-4hB" id="Hrg-LK-HHE"/>
+                        <outlet property="devicename" destination="9qv-km-V2d" id="kwo-yT-TAd"/>
+                        <outlet property="deviceresolution" destination="ugr-r6-UI7" id="5ly-ss-MVq"/>
+                        <outlet property="deviceversion" destination="qsR-qY-cG2" id="mop-Ik-4eI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
