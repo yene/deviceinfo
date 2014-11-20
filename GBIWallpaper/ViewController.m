@@ -24,6 +24,11 @@
     self.devicename.text = [[UIDevice currentDevice] name];
     self.devicemodel.text = [[[UIDevice currentDevice] model] stringByAppendingString:@"12345"];
     self.deviceversion.text = [@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]];
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    CGFloat screenScale = [[UIScreen mainScreen] scale];
+    NSString *res = screenScale > 1 ? @"Retina " : @"";
+    res = [NSString stringWithFormat:@"%@ (%dx%d)", res, (int)floor(screenBounds.size.height), (int)floor(screenBounds.size.width * screenScale)];
+    self.deviceresolution.text = res;
 }
 
 - (void)didReceiveMemoryWarning {
