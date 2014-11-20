@@ -31,9 +31,9 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LP-Xj-MC3">
                                 <rect key="frame" x="183" y="296" width="235" height="125"/>
-                                <string key="text">GBM iPad 302
+                                <string key="text">GBM iPad 401
 iOS 8
-iPad 3
+iPad 4
 Retina (2048 × 1536)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -48,6 +48,8 @@ Retina (2048 × 1536)</string>
                             <constraint firstAttribute="centerX" secondItem="4LP-Xj-MC3" secondAttribute="centerX" id="uan-hd-qfG"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
