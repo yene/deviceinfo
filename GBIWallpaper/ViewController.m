@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "UIDevice+Hardware.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *devicename;
 @property (weak, nonatomic) IBOutlet UILabel *deviceversion;
 @property (weak, nonatomic) IBOutlet UILabel *deviceresolution;
+@property (weak, nonatomic) IBOutlet UILabel *devicehardare;
 
 @end
 
@@ -22,11 +24,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.devicename.text = [[UIDevice currentDevice] name];
     self.deviceversion.text = [@"iOS " stringByAppendingString:[[UIDevice currentDevice] systemVersion]];
+    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGFloat screenScale = [[UIScreen mainScreen] scale];
     NSString *res = screenScale > 1 ? @"Retina " : @"";
     res = [NSString stringWithFormat:@"%@%dx%d", res, (int)floor(screenBounds.size.height), (int)floor(screenBounds.size.width * screenScale)];
     self.deviceresolution.text = res;
+    self.devicehardare.text = [[UIDevice currentDevice] hardwareDescription];
 }
 
 - (void)didReceiveMemoryWarning {

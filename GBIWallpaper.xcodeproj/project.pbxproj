@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC36CCBF1A1F4BAD00494E43 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = AC36CCBE1A1F4BAD00494E43 /* UIDevice+Hardware.m */; };
 		AC941C3519FF842800DC38EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC941C3419FF842800DC38EE /* main.m */; };
 		AC941C3819FF842800DC38EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC941C3719FF842800DC38EE /* AppDelegate.m */; };
 		AC941C3B19FF842800DC38EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC941C3A19FF842800DC38EE /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC36CCBD1A1F4BAD00494E43 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		AC36CCBE1A1F4BAD00494E43 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
 		AC941C2F19FF842800DC38EE /* GBIWallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBIWallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC941C3319FF842800DC38EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC941C3419FF842800DC38EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		AC941C3119FF842800DC38EE /* GBIWallpaper */ = {
 			isa = PBXGroup;
 			children = (
+				AC36CCBD1A1F4BAD00494E43 /* UIDevice+Hardware.h */,
+				AC36CCBE1A1F4BAD00494E43 /* UIDevice+Hardware.m */,
 				AC941C5A19FF84FD00DC38EE /* logo.png */,
 				AC941C3619FF842800DC38EE /* AppDelegate.h */,
 				AC941C3719FF842800DC38EE /* AppDelegate.m */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC941C3B19FF842800DC38EE /* ViewController.m in Sources */,
+				AC36CCBF1A1F4BAD00494E43 /* UIDevice+Hardware.m in Sources */,
 				AC941C3819FF842800DC38EE /* AppDelegate.m in Sources */,
 				AC941C3519FF842800DC38EE /* main.m in Sources */,
 			);
