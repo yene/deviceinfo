@@ -28,7 +28,7 @@
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
     CGFloat screenScale = [[UIScreen mainScreen] scale];
     NSString *res = screenScale > 1 ? @"Retina " : @"";
-    res = [NSString stringWithFormat:@"%@%dx%d", res, (int)floor(screenBounds.size.height), (int)floor(screenBounds.size.width * screenScale)];
+    res = [NSString stringWithFormat:@"%@%dx%d", res, (int)floor(screenBounds.size.height * screenScale), (int)floor(screenBounds.size.width * screenScale)];
     self.deviceresolution.text = res;
     self.devicehardare.text = [[UIDevice currentDevice] hardwareDescription];
 }
